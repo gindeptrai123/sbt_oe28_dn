@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><%= link_to t("nav.homepage"), root_path %></li>
-            <li><%= link_to t("nav.tours"), "#" %></li>
+            <li><%= link_to t("nav.tours"), tours_path %></li>
             <%= render partial: "layouts/category", collection: @categories %>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -46,6 +46,9 @@
                   <ul class="dropdown-menu custom-drd">
                     <li><%= link_to t("nav.profile"), current_user %></li>
                     <li><%= link_to t("nav.setting"), edit_user_path(current_user) %></li>
+                    <% if check_is_admin? %>
+                      <li><%= link_to t("nav.manage"), admin_root_path %></li>
+                    <% end %>
                     <li><%= link_to t("nav.post_review"), new_review_path %></li>
                     <li class="divider"></li>
                     <li>

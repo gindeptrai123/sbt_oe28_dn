@@ -20,6 +20,10 @@ module SessionsHelper
     @current_user ||= User.find_by(id: user_id)
   end
 
+  def check_is_admin?
+    current_user.admin?
+  end
+
   def store_location
     session[:forwarding_url] = request.original_url if request.get?
   end

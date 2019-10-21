@@ -1,4 +1,3 @@
-class Admin::PagesController < ApplicationController
-  layout "admin"
+class Admin::PagesController < AdminController
   def home; end
 end

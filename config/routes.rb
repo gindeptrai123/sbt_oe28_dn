@@ -8,10 +8,14 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#delete"
   post "/comments/:id", to: "comments#create"
   delete "/comments/:id", to: "comments#destroy"
+  get "/search", to: "tours#search"
+  post "/search", to: "tours#search"
   namespace :admin do
     root "pages#home"
+    resources :tours
   end
 
+  resources :tours, only: %i(index show)
   resources :users
   resources :reviews
   resources :categories, only: :show
