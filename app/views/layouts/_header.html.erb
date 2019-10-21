@@ -1,0 +1,61 @@
+<div class="header1 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-lg-2 dpl-rps-b">
+        <i class="fa fa-phone "  aria-hidden="true"></i> 0511 3538 266
+      </div>
+      <div class="col-md-7 col-lg-7 dpl-rps-b ">
+        <i class="fa fa-map-marker ml-45" aria-hidden="true"></i>
+        <%= t "address" %>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div id="support" class="mt-rps-10" >
+          <%= link_to image_tag("coen.jpg"), locale: Settings.en  %>
+          <%= link_to image_tag("covi.png"), locale: Settings.vi %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="banner">
+  <div id="menu">
+    <nav class="navbar navbar-default bg-tp">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+          </button>
+          <%= link_to image_tag("logo.png", alt: t("rails_logo")), class: "navbar-brand" %>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><%= t "nav.homepage" %></a></li>
+            <li><a href="#"><%= t "nav.tours" %></a></li>
+            <li><a href="#"><%= t "nav.news" %></a></li>
+            <li><a href="#"><%= t "nav.food" %></a></li>
+            <li><a href="#"><%= t "nav.place" %></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <%= link_to t("nav.account"), "#", class: "dropdown-toggle", "data-toggle" => "dropdown" %>
+              <ul class="dropdown-menu custom-drd">
+                <li><%= link_to t("nav.profile"), "#" %></li>
+                <li><%= link_to t("nav.setting"), "#" %></li>
+                <li><%= link_to t("nav.post_review"), "#" %></li>
+                <li class="divider"></li>
+                <li>
+                  <%= link_to t("nav.logout"), "#" %>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

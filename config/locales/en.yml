@@ -1,2 +1,25 @@
 en:
-
+  address: 103 Xuan Dieu, Thuan Phuoc town, Hai Chau District, Da Nang city
+  previous: Previous
+  next: Next
+  nav:
+    tours: TOURS
+    homepage: HOME
+    reviews: REVIEWS
+    news: NEWS
+    food: FOOD
+    place: PLACE
+    account: ACCOUNT
+    profile: PROFILE
+    setting: SETTING
+    logout: LOGOUT
+    post_review: YOUR REVIEW
+  footer:
+    p1: "Address: "
+    p2: "Email: "
+    p3: "Phone: "
+    p4: "@Copyright Loloviet@ 2015. All role are protected."
+    p5: Develope by Sun*
+  home:
+    title: Booking tours
+    contact: CONTACT US BY HOTLINE

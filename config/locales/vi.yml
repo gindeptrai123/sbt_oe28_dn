@@ -1,1 +1,25 @@
 vi:
+  address: 103 Xuân Diệu, phường Thuận Phước, quận Hải Châu, TP Đà Nẵng
+  previous: Trước
+  next: Sau
+  nav:
+    tours: CHUYẾN ĐI
+    homepage: TRANG CHỦ
+    reviews: CẢM NHẬN
+    news: TIN TỨC
+    food: ẨM THỰC
+    place: ĐỊA ĐIỂM
+    account: TÀI KHOẢN
+    profile: HỒ SƠ
+    setting: CÀI ĐẶT
+    logout: ĐĂNG XUẤT
+    post_review: VIẾT CẢM NHẬN
+  footer:
+    p1: "Địa chỉ: "
+    p2: "Email: "
+    p3: "Số điện thoại: "
+    p4: Bản quyền thuộc về Loloviet@ 2015. Tất cả các quyền được bảo hộ.
+    p5: Phát triển bởi Sun*
+  home:
+    title: Đặt vé du lịch
+    contact: LIÊN HỆ CHÚNG TÔI THEO HOTLINE
