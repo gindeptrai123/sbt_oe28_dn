@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   post "/signup", to: "users#create"
   get "/signup", to: "users#new"
   delete "/logout", to: "sessions#delete"
+  namespace :admin do
+    root "pages#home"
+  end
 end
