@@ -14,6 +14,9 @@ vi:
     setting: CÀI ĐẶT
     logout: ĐĂNG XUẤT
     post_review: VIẾT CẢM NHẬN
+    login: ĐĂNG NHẬP
+    signup: ĐĂNG KÝ
+    logout: ĐĂNG XUẤT
   footer:
     p1: "Địa chỉ: "
     p2: "Email: "
@@ -23,3 +26,23 @@ vi:
   home:
     title: Đặt vé du lịch
     contact: LIÊN HỆ CHÚNG TÔI THEO HOTLINE
+  login:
+    title: Đăng nhập
+    submit: ĐĂNG NHẬP
+    create_an_account: Tạo tài khoản mới
+    not_registered: Chưa đăng ký?
+  signup:
+    title: Đăng ký
+    submit: ĐĂNG KÝ
+    signin: Đăng nhập
+    already_registered: Đã có tài khoản?
+  signin: Đăng nhập
+  username: Tên tài khoản
+  password: Mật khẩu
+  email: Địa chỉ email
+  yourname: Tên của bạn
+  confirm_password: Xác nhận mật khẩu
+  msg:
+    username_pass_invalid: Tài khoản hoặc mật khẩu không đúng
+    the_form_has: Form này có
+    error: lỗi

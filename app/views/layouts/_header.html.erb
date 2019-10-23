@@ -41,18 +41,23 @@
             <li><a href="#"><%= t "nav.place" %></a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <%= link_to t("nav.account"), "#", class: "dropdown-toggle", "data-toggle" => "dropdown" %>
-              <ul class="dropdown-menu custom-drd">
-                <li><%= link_to t("nav.profile"), "#" %></li>
-                <li><%= link_to t("nav.setting"), "#" %></li>
-                <li><%= link_to t("nav.post_review"), "#" %></li>
-                <li class="divider"></li>
-                <li>
-                  <%= link_to t("nav.logout"), "#" %>
+              <% if logged_in? %>
+                <li class="dropdown">
+                  <%= link_to t("nav.account"), "#", class: "dropdown-toggle", "data-toggle" => "dropdown" %>
+                  <ul class="dropdown-menu custom-drd">
+                    <li><%= link_to t("nav.profile"), "#" %></li>
+                    <li><%= link_to t("nav.setting"), "#" %></li>
+                    <li><%= link_to t("nav.post_review"), "#" %></li>
+                    <li class="divider"></li>
+                    <li>
+                      <%= link_to t("nav.logout"), logout_path, method: :delete %>
+                    </li>
+                  </ul>
                 </li>
-              </ul>
-            </li>
+              <% else %>
+                <%= link_to t("nav.login"), signin_path %> /
+                <%= link_to t("nav.signup"), signup_path %>
+              <% end %>
           </ul>
         </div>
       </div>
