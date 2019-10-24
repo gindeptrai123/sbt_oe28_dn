@@ -14,6 +14,9 @@ en:
     setting: SETTING
     logout: LOGOUT
     post_review: YOUR REVIEW
+    login: LOGIN
+    signup: SIGNUP
+    logout: LOGOUT
   footer:
     p1: "Address: "
     p2: "Email: "
@@ -23,3 +26,22 @@ en:
   home:
     title: Booking tours
     contact: CONTACT US BY HOTLINE
+  login:
+    title: Login
+    submit: LOGIN
+    create_an_account: Create An Account
+    not_registered: Not registered?
+  signup:
+    title: Signup
+    submit: SINGUP
+    signin: Sign in
+    already_registered: Already registered?
+  username: Username
+  password: Password
+  email: Email
+  yourname: Your name
+  confirm_password: Confirm password
+  msg:
+    username_pass_invalid: Username or password invalid
+    the_form_has: The form has
+    error: error
