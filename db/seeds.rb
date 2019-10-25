@@ -5,4 +5,11 @@ User.create!(user_name: "huydz",
              full_name: "Quang Huy",
              role: 0,
              gender: true)
+User.create!(user_name: "renk",
+             email: "nguyen@gmal.com",
+             password: "123123",
+             password_confirmation: "123123",
+             full_name: "Hoang Nguyen",
+             role: 0,
+             gender: true)
 

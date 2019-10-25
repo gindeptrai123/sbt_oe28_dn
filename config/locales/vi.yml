@@ -46,3 +46,18 @@ vi:
     username_pass_invalid: Tài khoản hoặc mật khẩu không đúng
     the_form_has: Form này có
     error: lỗi
+  admin:
+    pages:
+      home:
+        header: Tên quản lý
+        title: Trang chính
+        content: Đây là trang của quản lý
+  layouts:
+    sidebar_admin:
+      name: Tên người dùng
+      home: Trang chủ
+      profile: Cá nhân
+      user: Quản lý người dùng
+      table: Thống kê
+      help: Trợ giúp
+      contact: Liên hệ
