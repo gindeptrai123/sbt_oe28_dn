@@ -10,4 +10,17 @@ module SessionsHelper
   def logged_in?
     session[:user_id].present?
   end
+
+  def current_user? user
+    user == current_user
+  end
+
+  def current_user
+    return unless user_id = session[:user_id]
+    @current_user ||= User.find_by(id: user_id)
+  end
+
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
+  end
 end

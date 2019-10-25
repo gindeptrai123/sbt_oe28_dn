@@ -36,6 +36,15 @@ en:
     submit: SINGUP
     signin: Sign in
     already_registered: Already registered?
+  edit:
+    title: Edit profile
+    submit: UPDATE
+  profile:
+    title: Your Profile
+    name: Full name
+    email: Email
+    gender: Gender
+    reviews: Reviews
   username: Username
   password: Password
   email: Email
@@ -45,6 +54,9 @@ en:
     username_pass_invalid: Username or password invalid
     the_form_has: The form has
     error: error
+    upate_success: Update Success
+    update_fail: Update Fail
+    user_invalid: User invalid
   admin:
     pages:
       home:
@@ -60,3 +72,6 @@ en:
       table: Table
       help: Help
       contact: Contact
+  gender:
+    male: Male
+    female: Female
