@@ -36,6 +36,15 @@ vi:
     submit: ĐĂNG KÝ
     signin: Đăng nhập
     already_registered: Đã có tài khoản?
+  edit:
+    title: Chỉnh sửa trang cá nhân
+    submit: CẬP NHẬT
+  profile:
+    title: Hồ sơ cá nhân
+    name: Tên người dùng
+    email: Email
+    gender: Giới tính
+    reviews: Số đánh giá
   signin: Đăng nhập
   username: Tên tài khoản
   password: Mật khẩu
@@ -46,6 +55,9 @@ vi:
     username_pass_invalid: Tài khoản hoặc mật khẩu không đúng
     the_form_has: Form này có
     error: lỗi
+    update_success: Cập nhật thành công
+    update_fail: Cập nhật thất bại
+    user_invalid: Người dùng không tồn tại
   admin:
     pages:
       home:
@@ -61,3 +73,6 @@ vi:
       table: Thống kê
       help: Trợ giúp
       contact: Liên hệ
+  gender:
+    male: Nam
+    female: Nữ

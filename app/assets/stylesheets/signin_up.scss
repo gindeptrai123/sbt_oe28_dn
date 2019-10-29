@@ -2,10 +2,12 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'color';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
 .login-page {
   width: 360px;
-  padding: 8% 0 0;
+  padding: 2% 0 0;
   margin: auto;
 }
 .form {
@@ -13,8 +15,8 @@
   z-index: 1;
   background: $white;
   max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
+  margin: 0 auto 20px;
+  padding: 20px 45px 20px 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -121,4 +123,41 @@ body {
 #error_exp{
   display:flex-start;
   color: $red;
+}
+
+.form ul {
+  list-style-type:none;
+  padding: 0;
+
+}
+.form ul li{
+  text-align: left;
+}
+
+.form h3{
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+}
+
+.form img {
+  text-align: center;
+  width: 75%;
+  margin: 20px;
+}
+
+.btn-edit{
+  position: absolute;
+  top:2px;
+  right:2px;
+}
+
+.form .img-logo{
+  width:90px;
+  height:auto;
+  margin:0 0 20px 0;
+}
+
+.form .avatar-img{
+  border-radius: 50%;
 }

@@ -1,29 +1,13 @@
 <% provide :title, t("signup.title") %>
+<% provide :url, signup_path  %>
+<% provide :button, t("signup.submit") %>
+<% provide :message do %>
+  <p class="message"><%= t "signup.already_registered" %>
+  <%= link_to t("signup.signin"), signin_path %>
+  </p>
+<% end %>
 
-<div class="login-page">
-
-  <div class="form">
-    <% flash.each do |message_type, message| %>
-      <div class="alert custom-<%= message_type %>"><%= message %></div>
-    <% end %>
-
-    <%= form_for @user, url: signup_path, html: {class: "register-form"} do |f| %>
-      <%= render "shared/error_messages", object: f.object  %>
-
-      <%= f.text_field :user_name, placeholder: t("username") %>
-
-      <%= f.email_field :email, placeholder: t("email") %>
-
-      <%= f.text_field :full_name, placeholder: t("yourname") %>
-
-      <%= f.password_field :password, placeholder: t("password") %>
-
-      <%= f.password_field :password_confirmation, placeholder: t("confirm_password") %>
-
-      <%= f.submit t("signup.submit"), class: "submit" %>
-      <p class="message"><%= t "signup.already_registered" %>
-      <%= link_to t("signup.signin"), signin_path %>
-      </p>
-    <% end %>
-  </div>
-</div>
+<% flash.each do |message_type, message| %>
+  <div class="alert custom-<%= message_type %>"><%= message %></div>
+<% end %>
+<%= render "form" %>

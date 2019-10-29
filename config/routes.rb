@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   namespace :admin do
     root "pages#home"
   end
+
+  resources :users
 end
