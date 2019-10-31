@@ -7,3 +7,10 @@ vi: "vi"
 username: 32
 email: 64
 password: 6
+review: 8
+description: 60
+news_id: "1"
+food_id: "2"
+place_id: "3"
+description_row: 3
+content_row: 10
