@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  before_action :set_locale
+  before_action :set_locale, :load_categories
   include SessionsHelper
 
   private
@@ -16,5 +16,9 @@ class ApplicationController < ActionController::Base
     return if logged_in?
     store_location
     redirect_to signin_url
+  end
+
+  def load_categories
+    @categories = Category.all
   end
 end
