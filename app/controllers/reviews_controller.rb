@@ -12,10 +12,11 @@ class ReviewsController < ApplicationController
     @review = current_user.reviews.build review_params
     if @review.save
       flash[:success] = t "msg.create_review_success"
+      redirect_to @review
     else
       flash[:danger] = t "msg.create_review_fail"
+      render :new
     end
-    render :new
   end
 
   def edit; end
@@ -40,6 +41,6 @@ class ReviewsController < ApplicationController
 
   def review_params
     params.require(:review).permit :title, :description, :content,
-      :category, :image
+      :category_id, :image
   end
 end

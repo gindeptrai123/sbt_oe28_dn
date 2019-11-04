@@ -37,9 +37,7 @@
           <ul class="nav navbar-nav">
             <li><%= link_to t("nav.homepage"), root_path %></li>
             <li><%= link_to t("nav.tours"), "#" %></li>
-            <li><%= link_to t("nav.news"), category_path(Settings.news_id) %></li>
-            <li><%= link_to t("nav.food"), category_path(Settings.food_id) %></li>
-            <li><%= link_to t("nav.place"), category_path(Settings.place_id) %></li>
+            <%= render partial: "layouts/category", collection: @categories %>
           </ul>
           <ul class="nav navbar-nav navbar-right">
               <% if logged_in? %>

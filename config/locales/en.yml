@@ -60,6 +60,7 @@ en:
     user_invalid: User invalid
     create_review_success: Review has created success!
     create_review_fail: Review has create failed !
+    category_invalid: Category invalid!
   admin:
     pages:
       home:

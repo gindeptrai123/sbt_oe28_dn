@@ -1,23 +1,17 @@
 class CategoriesController < ApplicationController
+  before_action :load_category, only: :show
+
   def show
-    @title = returntitle params[:id_category]
-    @reviews = Review.load_review(params[:id_category])
-                     .newest
-                     .paginate page: params[:page], per_page: Settings.review
+    @reviews = @category.reviews.newest
+                        .paginate page: params[:page], per_page: Settings.review
   end
 
   private
 
-  def returntitle id
-    case id
-    when Settings.news_id
-      t "nav.news"
-    when Settings.food_id
-      t "nav.food"
-    when Settings.place_id
-      t "nav.place"
-    else
-      redirect_to root_path
-    end
+  def load_category
+    @category = Category.find_by id: params[:id]
+    return if @category
+    flash[:danger] = t "msg.category_invalid"
+    redirect_to root_path
   end
 end
