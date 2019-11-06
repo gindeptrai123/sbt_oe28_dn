@@ -1,7 +1,9 @@
 class User < ApplicationRecord
   has_many :reviews, dependent: :destroy
   has_many :comments, dependent: :destroy
+
   has_many :tours, dependent: :destroy
+  has_many :likes, dependent: :destroy
 
   before_save{email.downcase!}
   validates :user_name, presence: true, length: {maximum: Settings.username}

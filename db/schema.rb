@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20191101024740) do
     t.integer "user_id"
     t.integer "review_id"
     t.index ["review_id"], name: "index_likes_on_review_id"
+    t.index ["user_id", "review_id"], name: "index_likes_on_user_id_and_review_id", unique: true
     t.index ["user_id"], name: "index_likes_on_user_id"
   end
 

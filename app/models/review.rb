@@ -4,6 +4,7 @@ class Review < ApplicationRecord
   belongs_to :user
   belongs_to :category, optional: true
   has_many :comments, dependent: :destroy
+  has_many :likes, dependent: :destroy
 
   validates :description, presence: true,
     length: {maximum: Settings.description}

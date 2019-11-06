@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   delete "/comments/:id", to: "comments#destroy"
   get "/search", to: "tours#search"
   post "/search", to: "tours#search"
+  post "/likes/:id", to: "likes#create"
+  delete "/likes/:id", to: "likes#destroy"
   namespace :admin do
     root "pages#home"
     resources :tours
@@ -20,4 +22,5 @@ Rails.application.routes.draw do
   resources :reviews
   resources :categories, only: :show
   resources :comments, only: [:create, :destroy]
+  resources :likes, only: [:create, :destroy]
 end

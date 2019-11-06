@@ -72,6 +72,7 @@ en:
     update_err: Update failed
     tour_inv: Invalid tour
     not_admin: You are not admin user
+    action_fail: Your action has fail
   admin:
     pages:
       home:
@@ -99,7 +100,7 @@ en:
     update: Update
   yourreview: Your Review
   comment:
-    commet: Comment
+    comment: Comment
     reply: Reply
     yourthink: What are you thinking?
   delete_comment: Delete comment
@@ -142,3 +143,5 @@ en:
         date_out: Date out
         rating: Rating
         image: Image
+  like_review: Like Review
+  unlike_review: Unlike Review

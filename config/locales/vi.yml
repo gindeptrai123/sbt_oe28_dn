@@ -72,6 +72,7 @@ vi:
     update_err: Cập nhật không thành công
     tour_inv: Chuyến đi không khả dụng
     not_admin: Bạn không phải là quản lý
+    action_fail: Bạn không thể thực hiện hành động
   admin:
     pages:
       home:
@@ -145,3 +146,5 @@ vi:
         date_out: Ngày về
         rating: Đánh giá
         image: Hình ảnh
+  like_review: Thích bài
+  unlike_review: Bỏ thích bài
