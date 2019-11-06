@@ -61,6 +61,9 @@ en:
     create_review_success: Review has created success!
     create_review_fail: Review has create failed !
     category_invalid: Category invalid!
+    comment_fail: Comment has fail!
+    comment_delete_success: Comment has deleted!
+    comment_delete_fail: Comment has deleted failed!
   admin:
     pages:
       home:
@@ -86,3 +89,9 @@ en:
     submit: Submit
     update: Update
   yourreview: Your Review
+  comment:
+    commet: Comment
+    reply: Reply
+    yourthink: What are you thinking?
+  delete_comment: Delete comment
+  are_you_sure: Are you sure?

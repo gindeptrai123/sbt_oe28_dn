@@ -61,6 +61,9 @@ vi:
     create_review_success: Tạo review thành công
     create_review_fail: Tạo review thất bại
     category_invalid: Category không tồn tại!
+    comment_fail: Bình luận không thành công!
+    comment_delete_success: Xóa bình luận thành công
+    comment_delete_fail: Gặp lỗi khi xóa bình luận
   admin:
     pages:
       home:
@@ -86,3 +89,9 @@ vi:
     submit: Thêm
     update: Cập nhật
   yourreview: Đánh giá của bạn
+  comment:
+    comment: Bình luận
+    reply: Trả lời
+    yourthink: Bạn đang nghĩ gì?
+  delete_comment: Xóa bình luận
+  are_you_sure: Bạn chắc không?

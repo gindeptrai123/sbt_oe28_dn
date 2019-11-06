@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   post "/signup", to: "users#create"
   get "/signup", to: "users#new"
   delete "/logout", to: "sessions#delete"
+  post "/comments/:id", to: "comments#create"
+  delete "/comments/:id", to: "comments#destroy"
   namespace :admin do
     root "pages#home"
   end
@@ -13,4 +15,5 @@ Rails.application.routes.draw do
   resources :users
   resources :reviews
   resources :categories, only: :show
+  resources :comments, only: [:create, :destroy]
 end
