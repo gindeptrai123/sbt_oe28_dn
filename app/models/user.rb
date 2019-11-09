@@ -1,8 +1,11 @@
 class User < ApplicationRecord
+  USER_PARAMS = %i(user_name email full_name password password_confirmation)
+                .freeze
+
   has_many :reviews, dependent: :destroy
   has_many :comments, dependent: :destroy
 
-  has_many :tours, dependent: :destroy
+  has_many :tours
   has_many :likes, dependent: :destroy
 
   before_save{email.downcase!}
@@ -10,10 +13,14 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: {maximum: Settings.email},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
-  enum role: [:admin, :user]
   has_secure_password
   validates :password, presence: true, length: {minimum:
     Settings.password}, allow_nil: true
+  validates :role, presence: true
+
+  enum role: [:admin, :user]
+
+  scope :newest, ->{order created_at: :desc}
 
   class << self
     def digest string

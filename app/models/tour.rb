@@ -1,7 +1,7 @@
 class Tour < ApplicationRecord
   mount_uploader :image, TourImageUploader
 
-  has_many :users
+  belongs_to :user
 
   validates :title, presence: true, length: {minimum: Settings.length.title}
   validates :description, presence: true,

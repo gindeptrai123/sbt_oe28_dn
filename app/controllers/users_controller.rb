@@ -26,10 +26,10 @@ class UsersController < ApplicationController
 
   def update
     if @user.update_attributes user_params
-      flash[:success] = t "msg.update_success"
+      flash[:success] = t "msg.create_user_success"
       redirect_to edit_user_path
     else
-      flash[:danger] = t "msg.update_fail"
+      flash[:danger] = t "msg.create_user_fail"
       render :edit
     end
   end
@@ -37,8 +37,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit :user_name, :email, :full_name,
-      :password, :password_confirmation
+    params.require(:user).permit User::USER_PARAMS
   end
 
   def load_user

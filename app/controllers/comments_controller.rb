@@ -41,7 +41,7 @@ class CommentsController < ApplicationController
 
   def load_comment id
     @comments = Comment.includes(:user).select_comments(id)
-                         .comment_type Settings.review
+                       .comment_type Settings.review
     @comments_parent = @comments.comment_id(Settings.parent_id_default).newest
     @comment_type = Settings.review
   end

@@ -10,7 +10,7 @@ class LikesController < ApplicationController
         @liked = @like
         format.js
       else
-        format.js { flash[:danger] = t "msg.action_fail" }
+        format.js{flash[:danger] = t "msg.action_fail"}
       end
     end
   end
@@ -21,7 +21,7 @@ class LikesController < ApplicationController
       if @like.destroy
         format.js
       else
-        format.js { flash[:danger] = t "msg.action_fail" }
+        format.js{flash[:danger] = t "msg.action_fail"}
       end
     end
   end
