@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: 4ba30fb28072e942420ebf2d58da73969ae6159b
+  branch: master
+  specs:
+    faker (2.6.0)
+      i18n (>= 1.6, < 1.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -114,8 +122,6 @@ GEM
       dry-logic (~> 1.0, >= 1.0.2)
     erubis (2.7.0)
     execjs (2.7.0)
-    faker (2.6.0)
-      i18n (>= 1.6, < 1.8)
     ffi (1.11.1)
     font-awesome-sass (4.7.0)
       sass (>= 3.2)
@@ -162,7 +168,7 @@ GEM
     mime-types (3.3)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.1009)
-    mini_magick (4.7.0)
+    mini_magick (4.9.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.12.2)
@@ -303,7 +309,7 @@ DEPENDENCIES
   carrierwave (~> 0.10.0)
   coffee-rails (~> 4.2)
   config
-  faker
+  faker!
   font-awesome-sass (= 4.7.0)
   guard (= 2.15.0)
   guard-minitest (= 2.4.6)

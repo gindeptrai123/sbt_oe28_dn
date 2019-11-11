@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   layout "users_sessions"
   before_action :load_user, except: %i(new create)
-  before_action :logged_in_user, :correct_user, only: [:update, :edit]
+  before_action :logged_in_user, :correct_user, only: %i(update edit)
 
   def show; end
 

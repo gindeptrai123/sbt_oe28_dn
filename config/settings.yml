@@ -15,3 +15,9 @@ review: "review"
 tour: "tour"
 parent_id_default: 0
 avatar: "default-avatar.png"
+zero: 0
+tours: 8
+length:
+  title: 3
+  content: 9000
+  description: 140
