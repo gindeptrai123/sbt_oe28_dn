@@ -2,7 +2,7 @@
   <div class="delete-comment">
     <i>
       <% if current_user? comment.user %>
-      <%= link_to t("delete_comment"), comment, method: :delete, data: { confirm: t("are_you_sure") } %>
+      <%= link_to t("delete_comment"), comment, method: :delete, remote: true, data: { confirm: t("are_you_sure") } %>
       <% end %>
     </i>
   </div>

@@ -4,17 +4,25 @@ class CommentsController < ApplicationController
 
   def create
     @comment = current_user.comments.build comment_params
-    flash[:danger] = t "msg.comment_fail" unless @comment.save
-    redirect_to review_path
+    @comment = Comment.new if @comment.save
+    load_comment params[:id]
+    respond_to do |format|
+      format.js
+    end
   end
 
   def destroy
+    review_id = @comment.comment_id
     if @comment.destroy
       flash[:success] = t "msg.comment_delete_success"
     else
       flash[:danger] = t "msg.comment_delete_fail"
     end
-    redirect_to request.referrer || review_path
+    load_comment review_id
+    @comment = Comment.new
+    respond_to do |format|
+      format.js
+    end
   end
 
   private
@@ -29,5 +37,12 @@ class CommentsController < ApplicationController
     return if @comment
     flash[:danger] = t "msg.comment_delete_fail"
     redirect_to review_path
+  end
+
+  def load_comment id
+    @comments = Comment.includes(:user).select_comments(id)
+                         .comment_type Settings.review
+    @comments_parent = @comments.comment_id(Settings.parent_id_default).newest
+    @comment_type = Settings.review
   end
 end

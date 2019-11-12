@@ -1,12 +1,15 @@
 class ReviewsController < ApplicationController
   before_action :logged_in_user, only: %i(new update edit)
   before_action :load_review, only: %i(show update edit)
+  before_action :check_liked, only: :show
 
   def show
     @comment = Comment.new
     @comments = Comment.includes(:user).select_comments(params[:id])
                        .comment_type Settings.review
     @comments_parent = @comments.comment_id(Settings.parent_id_default).newest
+    @comment_type = Settings.review
+    @like = Like.new
   end
 
   def new
@@ -47,5 +50,10 @@ class ReviewsController < ApplicationController
   def review_params
     params.require(:review).permit :title, :description, :content,
       :category_id, :image
+  end
+
+  def check_liked
+    return unless logged_in?
+    @liked = Like.like_review(params[:id]).find_by user_id: current_user.id
   end
 end

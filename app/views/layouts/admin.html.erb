@@ -10,9 +10,7 @@
   <body>
     <%= render "layouts/sidebar_admin" %>
     <div class ="tour container">
-      <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
-      <% end %>
+      <%= render "shared/flash_messages" %>
     </div>
     <%= yield %>
   </body>
