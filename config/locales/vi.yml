@@ -51,6 +51,7 @@ vi:
   password: Mật khẩu
   email: Địa chỉ email
   yourname: Tên của bạn
+  full_name: Tên đầy đủ
   confirm_password: Xác nhận mật khẩu
   base_title: Du lịch
   msg:
@@ -225,3 +226,16 @@ vi:
   like_review: Thích bài
   unlike_review: Bỏ thích bài
   name_tour: Tên chuyến đi
+  alert:
+    password: (để trắng nếu bạn không muốn thay đổi)
+    confirm: (chúng tôi cần bạn xác nhận mật khẩu trước khi thay đổi)
+    minimum: ký tự tối thiểu
+  cancel_my_account: Xóa tài khoản
+  back: Quay lại
+  update: Cập nhật
+  unhappy: Không vui?
+  forgot_password: Quên mật khẩu?
+  change_password: Thay đổi mật khẩu
+  reset_password: Gửi yêu cầu đổi mật khẩu
+  new_password: Mật khẩu mới
+  confirm_new_password: Xác nhận mật khẩu mới
