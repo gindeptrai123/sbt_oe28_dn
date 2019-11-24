@@ -2,5 +2,9 @@
 //= require jquery_ujs
 //= require jquery.turbolinks
 //= require bootstrap
+//= require custom
+//= require slider
+//= require Chart.bundle
+//= require chartkick
 //= require ckeditor/init
 //= require_tree

@@ -1,4 +1,5 @@
 class Admin::ReviewsController < AdminController
+  load_and_authorize_resource
   before_action :load_review, except: %i(new index create)
   before_action :all_reviews, only: [:index, :destroy]
 

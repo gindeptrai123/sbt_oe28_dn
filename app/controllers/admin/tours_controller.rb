@@ -1,4 +1,5 @@
 class Admin::ToursController < AdminController
+  load_and_authorize_resource
   before_action :load_tour, except: %i(index new create)
 
   def index

@@ -7,7 +7,20 @@
           <div class="alert alert-<%= message_type %>"><%= message %></div>
         <% end %>
         <h1><%= t ".title" %></h1>
-        <p><%= t ".content" %></p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <p><%= t "chart.gender_users" %></p>
+              <%= pie_chart User.group(:gender).count %>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <p><%= t "chart.categories_reviews" %></p>
+              <%= column_chart Review.group(:category_id).count %>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <p><%= t "chart.rating_tours" %></p>
+              <%= column_chart Tour.group(:rating).count %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
