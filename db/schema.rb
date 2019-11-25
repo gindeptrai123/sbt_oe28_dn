@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191101024740) do
+ActiveRecord::Schema.define(version: 20191125035008) do
 
   create_table "bookings", force: :cascade do |t|
     t.string   "name"
@@ -102,7 +102,7 @@ ActiveRecord::Schema.define(version: 20191101024740) do
     t.string   "full_name"
     t.string   "email"
     t.string   "password_digest"
-    t.integer  "role",            default: 0
+    t.integer  "role",            default: 1
     t.boolean  "gender",          default: true
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false

@@ -21,3 +21,10 @@ length:
   title: 3
   content: 9000
   description: 140
+role:
+  admin: 0
+  user: 1
+paginate:
+  categories: 10
+  users: 15
+  reviews: 10

@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   namespace :admin do
     root "pages#home"
     resources :tours
+    resources :categories, except: [:show, :new]
+    resources :reviews
+    resources :users, except: :edit
   end
 
   resources :tours, only: %i(index show)

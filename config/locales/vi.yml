@@ -73,12 +73,78 @@ vi:
     tour_inv: Chuyến đi không khả dụng
     not_admin: Bạn không phải là quản lý
     action_fail: Bạn không thể thực hiện hành động
+    create_cate_success: Tạo danh mục thành công
+    create_cate_fail: Tạo danh mục thất bại
+    delete_cate_success: Xóa danh mục thành công
+    delete_cate_fail: Xóa danh mục thất bại
+    delete_review_success: Xóa cảm nhận thành công
+    delete_review_fail: Xóa cảm nhận thất bại
+    user_delete_success: Xóa người dùng thành công
+    user_delete_fail: Xóa người dùng thất bại
+    review_invalid: Bài cảm nhận không tồn tại
+    no_reviews: Chưa có cảm nhận nào
+    no_categories: Chưa có danh mục nào
+    create_user_success: Tạo tài khoản thành công
+    create_user_fail: Tạo tài khoản không thành công
   admin:
     pages:
       home:
         header: Tên quản lý
         title: Trang chính
         content: Đây là trang của quản lý
+    categories:
+      index:
+        title: Tất cả danh mục
+        id: Id
+        name: Tên
+        action: Hành động
+      category:
+        edit: Sửa
+        delete: Xóa
+      form:
+        update: Cập nhật
+        add_cate: Thêm mới danh mục
+        name: Tên danh mục
+    reviews:
+      index:
+        title: Tất cả cảm nhận
+        id: Id
+        title_table: Tiêu đề
+        content: Nội dung
+        descreption: Mô tả
+        image: Hình ảnh
+        action: Hành động
+        add_new_review: Thêm cảm nhận mới
+      review:
+        delete: Xóa
+        view: Xem
+        edit: Sửa
+      show:
+        title: Chi tiết danh mục
+        all_review: Tất cả cảm nhận
+        edit: Sửa
+      new:
+        title: Tạo review mới
+    users:
+      index:
+        title: Tất cả người dùng
+        add_new_user: Thêm người dùng mới
+        id: Id
+        full_name: Tên đầy đủ
+        user_name: Tên tài khoản
+        email: Email
+        role: Vai trò
+        action: Hành động
+      show:
+        title: Chi tiết người dùng
+      new:
+        title: Thêm mới người dùng
+        add_new_user: Thêm người dùng mới
+      user:
+        view: Xem
+        update_role: Chỉnh sửa vai trò
+        update: Cập nhật
+        delete: Xóa
   layouts:
     sidebar_admin:
       name: Khách hàng
@@ -89,6 +155,9 @@ vi:
       table: Thống kê
       help: Trợ giúp
       contact: Liên hệ
+      review: Cảm nhận
+      user: Người dùng
+      category: Danh mục
   shared:
     search_form:
       submit: Gửi

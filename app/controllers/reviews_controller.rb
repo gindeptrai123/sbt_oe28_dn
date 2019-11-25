@@ -48,8 +48,7 @@ class ReviewsController < ApplicationController
   end
 
   def review_params
-    params.require(:review).permit :title, :description, :content,
-      :category_id, :image
+    params.require(:review).permit Review::REVIEW_PARAMS
   end
 
   def check_liked

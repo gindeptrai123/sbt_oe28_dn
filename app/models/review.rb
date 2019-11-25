@@ -1,6 +1,8 @@
 class Review < ApplicationRecord
   mount_uploader :image, ImageUploader
 
+  REVIEW_PARAMS = %i(title description content category_id image).freeze
+
   belongs_to :user
   belongs_to :category, optional: true
   has_many :comments, dependent: :destroy
