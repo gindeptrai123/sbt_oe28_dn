@@ -158,6 +158,16 @@ en:
     description: Description
     submit: Submit
     update: Update
+  shared:
+    search_form:
+      search: Search
+      min_price: Min price
+      max_price: Max price
+      date_in: Date in
+      action: .
+      price: Price
+      newest: Newest
+      show_for: "Show for:"
   yourreview: Your Review
   comment:
     comment: Comment
@@ -205,3 +215,4 @@ en:
         image: Image
   like_review: Like Review
   unlike_review: Unlike Review
+  name_tour: Tour's name

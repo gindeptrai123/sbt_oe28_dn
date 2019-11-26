@@ -160,7 +160,14 @@ vi:
       category: Danh mục
   shared:
     search_form:
-      submit: Gửi
+      search: Tìm kiếm
+      min_price: Giá tối thiểu
+      max_price: Giá tối đa
+      date_in: Ngày đi
+      action: .
+      price: Giá
+      newest: Mới nhất
+      show_for: "Hiển thị theo:"
   gender:
     male: Nam
     female: Nữ
@@ -217,3 +224,4 @@ vi:
         image: Hình ảnh
   like_review: Thích bài
   unlike_review: Bỏ thích bài
+  name_tour: Tên chuyến đi
