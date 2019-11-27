@@ -1,10 +1,10 @@
 <% provide :title, t("tours.index.title") %>
 <div class="tour container index-tour">
   <h4><b><%= yield :title %><hr/></b></h4>
-  <div class="search-form">
-    <%= render "shared/search_form" %>
-  </div>
   <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search-tours">
+      <%= render "shared/search_form" %>
+    </div>
     <%= render partial: "tour", collection: @tours %>
   </div>
   <div class="container">

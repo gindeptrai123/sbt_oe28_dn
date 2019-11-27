@@ -875,3 +875,18 @@ p {
   margin-left: 45%;
   text-align: center;
 }
+.search-tours{
+  min-height: 150px;
+  >label{
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    padding:4px;
+  }
+  .btn{
+    margin-top: 25px;
+  }
+}
+.tour-input{
+  width: 100% !important;
+}
+

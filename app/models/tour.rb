@@ -15,7 +15,7 @@ class Tour < ApplicationRecord
   UPDATE_ATTRS = [:title, :description, :content, :price, :date_in, :date_out,
     :image].freeze
 
-  scope :search, ->(title){where "title LIKE ?", "%#{title}%"}
+  scope :newest, ->{order created_at: :desc}
 
   private
 
