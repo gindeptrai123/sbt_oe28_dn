@@ -14,7 +14,7 @@
   </div>
 
   <div class="form-group">
-    <%= f.text_area :content, placeholder: t("form.content"), class: "form-control", rows: Settings.content_row %>
+    <%= f.text_area :content, as: :ckeditor, placeholder: t("form.content"), class: "form-control ckeditor", rows: Settings.content_row %>
   </div>
 
   <div class="form-group">

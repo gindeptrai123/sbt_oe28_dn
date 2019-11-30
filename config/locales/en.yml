@@ -227,3 +227,11 @@ en:
   forgot_password: Forgot your password?
   change_password: Change your password?
   reset_password: Send me reset password
+  ckeditor:
+    page_title: CKEditor Files Manager
+    confirm_delete: Delete file?
+    buttons:
+      cancel: Cancel
+      upload: Upload
+      delete: Delete
+      next: Next
