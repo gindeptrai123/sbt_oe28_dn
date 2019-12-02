@@ -8,6 +8,7 @@ end
 gem "bcrypt", "3.1.12"
 gem "bootstrap-sass", "3.3.7"
 gem "carrierwave", "~> 0.10.0"
+gem "ckeditor", "~> 4.3.0"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "devise"
