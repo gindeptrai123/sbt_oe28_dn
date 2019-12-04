@@ -1,4 +1,5 @@
 class Admin::CategoriesController < AdminController
+  load_and_authorize_resource
   before_action :load_category, only: %i(destroy edit update)
   before_action :build_category, only: :index
   before_action :all_categories, only: [:index, :edit]

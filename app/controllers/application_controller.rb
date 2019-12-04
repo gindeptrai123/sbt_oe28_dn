@@ -3,6 +3,16 @@ class ApplicationController < ActionController::Base
   before_action :set_locale, :load_categories
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  rescue_from CanCan::AccessDenied do |exception|
+    respond_to do |format|
+      if current_user.user?
+        format.html{redirect_to root_path, notice: exception.message}
+      else
+        format.html{redirect_to admin_root_path, notice: exception.message}
+      end
+    end
+  end
+
   include SessionsHelper
 
   private

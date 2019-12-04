@@ -1,4 +1,5 @@
 class Admin::UsersController < AdminController
+  load_and_authorize_resource
   before_action :load_user, only: [:update, :destroy]
   before_action :all_users, only: :index
 

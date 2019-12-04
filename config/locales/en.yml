@@ -235,3 +235,7 @@ en:
       upload: Upload
       delete: Delete
       next: Next
+  chart:
+    gender_users: Gender of users
+    categories_reviews: Categories of reviews
+    rating_tours: Rating of tours

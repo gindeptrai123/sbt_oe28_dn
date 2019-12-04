@@ -16,8 +16,6 @@ module Project
     config.to_prepare do
     Devise::SessionsController.layout "users_sessions"
     Devise::RegistrationsController.layout "users_sessions"
-    # Devise::ConfirmationsController.layout "your_layout_name"
-    # Devise::UnlocksController.layout "your_layout_name"
     Devise::PasswordsController.layout "users_sessions"
     end
   end

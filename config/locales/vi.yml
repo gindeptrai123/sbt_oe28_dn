@@ -247,3 +247,12 @@ vi:
       upload: Upload
       delete: Xóa
       next: Tiếp
+  unauthorized:
+    manage:
+      all: "Bạn không có quyền!"
+    update:
+      user: "Bạn không thể thay đổi vai trò của chính mình "
+  chart:
+    gender_users: Thống kê giới tính người dùng
+    categories_reviews: Thống kê danh mục cảm nhận
+    rating_tours: Thống kê đánh giá chuyến đi
